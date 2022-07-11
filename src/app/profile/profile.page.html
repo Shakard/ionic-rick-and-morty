@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>profile</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="characters-list"></ion-back-button>
+    </ion-buttons>    
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>{{character?.species}}</ion-card-subtitle>
+      <ion-card-title>{{character?.name}}</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      <img src="{{character?.image}}" alt="">
+      <ion-label>
+        Created: {{character?.created}}
+      </ion-label>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
